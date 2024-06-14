@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Screens</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="left-section">
+            <img src="https://deepthought.education/assets/images/logo/logo.svg" alt="Logo" class="logo">
+        </div>
+        <div class="right-section">
+            <div class="icon"><i class="fas fa-home"></i></div>
+            <div class="icon"><i class="fas fa-wrench"></i></div>
+            <div class="icon"><i class="fas fa-bell"></i></div>
+            <div class="photo"><img src="https://images.pexels.com/photos/712513/pexels-photo-712513.jpeg?auto=compress&cs=tinysrgb&w=600" alt="User Photo"></div>
+            <div class="three-dot"><i class="fas fa-ellipsis-v"></i></div>
+        </div>
+    </header>
+        
+    <div class="container">
+        <div class="sidebar" id="sidebar">
+            <button class="toggle-btn" onclick="toggleSidebar()">&#9776;</button>
+            <ul class="sidebar-menu">
+                <li>Explore the world of management</li>
+                <li>Technical Project Management</li>
+                <li>Threadbuild</li>
+                <li>Structure your Pointers</li>
+                <li>4SA Method</li>
+            </ul>
+    </div>
+        <div class="main-content" id="main-content">
+            <div class="content-header">
+                <h2>Technical Project Management</h2>
+                <button class="submit-btn">Submit Task</button>
+            </div>
+            <div class="explore-div">
+                <h3>Explore the world of management</h3>
+                <p>As a project manager, you play an important role in leading a project through initiation, planning, execution, monitoring, controlling and completation.
+                    How? Do you want to manage each and every step of your life?
+                </p>
+            </div>
+            <section class="content">
+                <div class="card">
+                    <div class="card-h2"><h2>Technical Project Management</h2></div>
+                    <p>Description: Story of Alignment Scope of Agility Specific Acceleration Staggered Approach</p>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/your-video-id"></iframe>
+                </div>
+                <div class="card">
+                    <div class="card-h2"><h2>Threadbuild</h2></div>
+                    <p>Description: Watch the video and threadbuild, and jot out key threads while watching the video.</p>
+                    <div class="thread-section">
+                        <input type="text" id="thread-input" placeholder="Enter Thread A">
+                        <button class="add-thread-btn" onclick="addThread()">Add Thread</button>
+                        <div id="threads-list"></div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-h2"><h2>Structure your Pointers</h2></div>
+                    
+                    <p>Description: Write a 300 - 400 word article from your thread. Publish the article after structuring and showcase your understanding in the write control.</p>
+                    <div class="article-section">
+                        <input type="text" placeholder="Title">
+                        <textarea placeholder="Content"></textarea>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-h2"><h2>4SA Method</h2></div>
+                    <p>Description: To Explore more read more</p>
+                    <div class="content-toggle">
+                        <button class="accordion">Introduction</button>
+                        <div class="panel">
+                            <p>The 4SA Method, How to bring a idea into progress?</p>
+                        </div>
+    
+                        <button class="accordion">Thread A</button>
+                        <div class="panel">
+                            <p>How are you going to develop your strategy ? Which method are you going to use to develop a strategy ? What if the project is lengthy?</p>
+                        </div>
+    
+                        <button class="accordion">Example 1</button>
+                        <div class="panel">
+                            <p>You have a concept, How will you put into progress?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
